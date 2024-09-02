@@ -26,6 +26,8 @@ export interface footerProps {
   studentId: string;
 }
 
-export interface searchInput {
-
+export interface searchInputParams {
+  params: {
+    searchInput: string;
+  }
 }
