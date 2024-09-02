@@ -3,20 +3,20 @@
 import { MovieRow } from "@/components/MovieRow";
 import { movieDB } from "@/libs/movieDB";
 
-export default function SearchResultPage() {
+export default function SearchResultPage({ params }) {
   //tip1 : before filtering movie, replace all "%20" with " " (space) in the input
-  // const processedSearchInput = ...
+  const processedSearchInput = .removeAll("%20"," ")
 
   /*
   tip2 : Use "includes" string method to check substring
   Example : "ABC".includes("AB") -> return true
 
   tip3 : To implement case insensitive searching, use "toLocaleLowerCase" string method
-  to convert movie title and searchInput to lower case 
+  to convert movie title and searchInput to lower case */
   const filteredMovies = movieDB.filter((movie) =>
-    you code here...
+    
   );
-  */
+  
 
   return (
     <div>
